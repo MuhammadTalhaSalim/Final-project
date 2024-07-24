@@ -1,0 +1,18 @@
+@import "veriables";
+@import "Mixins";
+@import "Header";
+@import "Nav";
+@import "Aboutus";
+@import "Servics";
+@import "Featured-cars";
+@import "Testimonial";
+@import "secondlast";
+@import "Footer";
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: $font-family;
+  font-size: $Standard-font;
+}
+

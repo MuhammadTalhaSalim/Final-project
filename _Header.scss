@@ -1,0 +1,106 @@
+header {
+    // width: 1440px;
+    // height: 960px;
+  width: 100vw;
+  height: 95vh;
+  max-width: 1440px;
+  background-color: $First-color;
+  overflow-y: hidden;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $fourth-color;
+    padding: 7.7rem 20%;
+
+    h1 {
+      font-size: 5.6rem;
+      line-height: 150%;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: medium;
+      text-align: center;
+    }
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 22vh 0;
+
+    button {
+      color: $fourth-color;
+      font-size: 2.4rem;
+      padding: 5px 10px;
+      cursor: pointer;
+
+      &#pink-button {
+        background-color: $third-color;
+        border: 1px solid $third-color;
+        &:hover{
+          background-color: crimson;
+          transition-duration: 0.5s;
+          border:1px solid crimson;
+        }
+      }
+
+      &#black-button {
+        background-color: $First-color;
+        border: 1px solid $fourth-color;
+        position: relative;
+        &:hover{
+          background-color:$fourth-color;
+          color:$First-color;
+          transition-duration:0.5s;
+        }
+      }
+    }
+  }
+}
+
+@include Mobile-screen {
+  header {
+    height: 120vh;
+    .content {
+      padding: 8.0rem 3.9rem;
+    }
+    h1 {
+      font-size: 2.6rem !important;
+    }
+    p {
+      font-size: 1.2rem !important;
+    }
+    .buttons {
+      flex-direction: column;
+      gap: 17px;
+      padding:44vh 0px;
+      align-items: center;
+      button {
+        font-size: 1.4rem;
+        width: 40%;
+      }
+    }
+  }
+ul{
+  li{
+    display: none;
+  }
+} 
+}
+
+#black-button::before{
+content: "";
+background: linear-gradient(45deg,white,lightgray);
+position: absolute;
+top:-2px;
+left:-2px;
+background-size: 600%;
+z-index: -1;
+width:calc(100% + 4px);
+height:calc(100% + 2px) ;
+filter: blur(8px);
+}
