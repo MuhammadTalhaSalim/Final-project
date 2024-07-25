@@ -1,7 +1,7 @@
 .section-1 {
   // width: 1440px;
   // height: 1106px;
-  width:100%;
+  width: 100%;
   height: 130vh;
   // max-width: 1440px;
   background-color: $second-color;
@@ -18,17 +18,17 @@
   position: relative;
   bottom: 23vh;
   overflow-y: hidden;
-  .about-us-heading{
+  .about-us-heading {
     color: $fourth-color;
     position: relative;
-    top:22rem;
+    top: 22rem;
     left: 20rem;
     padding-right: 67%;
-    h1{
+    h1 {
       font-size: 3.8rem;
       font-weight: bold;
     }
-    p{
+    p {
       font-size: 1.4rem;
     }
   }
@@ -56,14 +56,14 @@
     button {
       color: $fourth-color;
       font-size: 1.4rem;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       cursor: pointer;
       background-color: $third-color;
-      border: .1rem solid $third-color;
-      width:20rem;
+      border: 0.1rem solid $third-color;
+      width: 20rem;
       height: 4.5rem;
-      box-shadow: .1rem 0rem 1.2rem #f9449b;
-      &:hover{
+      box-shadow: 0.1rem 0rem 1.2rem #f9449b;
+      &:hover {
         background-color: crimson;
         transition-duration: 0.5s;
         border: none;
@@ -74,117 +74,138 @@
       .picture-container {
         // width: 100%;
         // height: 100%;
-        width:45rem;
-        height:52rem;
-        background-color: #3f3f3f;
+        width: 45rem;
+        height: 52rem;
+        // background-color: #3f3f3f;
         overflow-y: hidden;
-        img{
-          width:100%;
-          height:100%;
+        img {
+          width: 100%;
+          height: 100%;
           object-fit: cover;
+          animation-name: top;
+          animation-duration: 2s;
+          animation-timing-function: ease;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-direction: normal;
         }
       }
     }
   }
 }
 
-
- @include Mobile-screen{
+@include Mobile-screen {
   .section-1 {
-    clip-path: polygon(0 100%, 0 3%, 69% 3%, 80% 0, 100% 0, 100% 22%, 100% 85%, 100% 99%, 85% 209%, 68% 100%, 62% 100%, 55% 100%);
+    clip-path: polygon(
+      0 100%,
+      0 3%,
+      69% 3%,
+      80% 0,
+      100% 0,
+      100% 22%,
+      100% 85%,
+      100% 99%,
+      85% 209%,
+      68% 100%,
+      62% 100%,
+      55% 100%
+    );
     bottom: 10vh;
     height: 130rem;
     background-color: #101010 !important;
-    .about-us-heading{
+    .about-us-heading {
       text-align: center;
       left: 0;
       padding: 1rem;
-      top:15rem;
-      h1{
+      top: 15rem;
+      h1 {
         font-size: 2.8rem;
       }
     }
-    .about-us-container{
+    .about-us-container {
       padding: 0rem 3.3rem;
       margin-top: 19rem;
-    flex-direction: column-reverse;
-    align-items: center;
+      flex-direction: column-reverse;
+      align-items: center;
     }
-  .about-us-left {
-    width: 100%!important;
-    text-align: center;
-    align-items: center;
-    font-size: 1.2rem;
-    margin-top: 0!important;
-    p{
-      font-size: 1.2rem!important;
+    .about-us-left {
+      width: 100% !important;
+      text-align: center;
+      align-items: center;
+      font-size: 1.2rem;
+      margin-top: 0 !important;
+      p {
+        font-size: 1.2rem !important;
+      }
+    }
+    .about-us-right {
+      width: 100% !important;
+      .picture-container {
+        width: 35.9rem !important;
+        height: 40rem !important;
+        border-radius: 0rem !important;
+      }
     }
   }
-  .about-us-right {
-    width: 100%!important;
-    .picture-container{
-      width: 35.9rem!important;
-      height: 40rem!important;
-      border-radius: 0rem !important
-    }
-  }
-}
 }
 
 @include Tablet-screen {
-  .about-us-heading{
+  .about-us-heading {
     left: 4.2rem !important;
-    h1{
+    h1 {
       font-size: 2rem !important;
     }
-    p{
+    p {
       font-size: 1rem;
     }
   }
-  .about-us-container{
+  .about-us-container {
     padding: 0rem 4rem !important;
-    .about-us-left{
-      p{
+    .about-us-left {
+      p {
         font-size: 1rem !important;
       }
     }
-    .about-us-right{
-      .picture-container{
+    .about-us-right {
+      .picture-container {
         height: 42.5rem !important;
         border-radius: 0rem !important;
-        width:37rem !important;
+        width: 37rem !important;
       }
     }
-
-
-
   }
 }
-@media (min-width:350px) and (max-width:600px){
-  .about-us-container{
-    .about-us-left{
-      p{
+@media (min-width: 350px) and (max-width: 600px) {
+  .about-us-container {
+    .about-us-left {
+      p {
         font-size: 1.3rem !important;
       }
     }
   }
 }
 
-
-@include sm-laptop{
-  .section-1{
+@include sm-laptop {
+  .section-1 {
     height: 115vh;
   }
-  .about-us-heading{
+  .about-us-heading {
     left: 7.1rem !important;
   }
   .about-us-container {
-   
     padding: 0rem 7rem !important;
   }
 }
-@include laptop-screen{
-    .section-1{
-      height: 100vh !important;
-    }
+@include laptop-screen {
+  .section-1 {
+    height: 100vh !important;
+  }
+}
+@keyframes top {
+  from {
+    transform: translateX(50vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
 }

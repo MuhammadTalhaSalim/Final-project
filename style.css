@@ -1,16 +1,16 @@
 @media (min-width: 1600px) {
   html {
-    font-size: 10.5px !important;
+    font-size: 65.65% !important;
   }
 }
 @media (min-width: 1920px) {
   html {
-    font-size: 13px !important;
+    font-size: 81.25% !important;
   }
 }
 @media (min-width: 2560px) {
   html {
-    font-size: 17px !important;
+    font-size: 106.25% !important;
   }
 }
 header {
@@ -236,7 +236,6 @@ nav .containor .logo {
 .section-1 .about-us-container .about-us-right .picture-container {
   width: 45rem;
   height: 52rem;
-  background-color: #3f3f3f;
   overflow-y: hidden;
 }
 .section-1 .about-us-container .about-us-right .picture-container img {
@@ -244,6 +243,12 @@ nav .containor .logo {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  animation-name: top;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
 
 @media only screen and (max-width: 600px) {
@@ -329,6 +334,14 @@ nav .containor .logo {
 @media (min-width: 1435px) {
   .section-1 {
     height: 100vh !important;
+  }
+}
+@keyframes top {
+  from {
+    transform: translateX(50vw);
+  }
+  to {
+    transform: translateX(0vw);
   }
 }
 .section-2 {
@@ -1005,7 +1018,7 @@ footer .statment p {
   }
 }
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 * {
