@@ -4,9 +4,6 @@ nav {
   width: 100%;
   z-index: 1;
   .containor {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     @include flex-center(flex,center,space-between);
     padding: 1.5em 5.5em;
     .menu {

@@ -55,4 +55,16 @@
     justify-content:$justify;
   }
 
- 
+
+
+
+
+ @media (min-width:1544px) and (max-width:1544px){
+    .section-2{
+        margin-top: -4% !important;
+        height: 63vh !important;
+    }
+    .section-1{
+        height:80vh !important;
+    }
+ }

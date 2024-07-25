@@ -5,17 +5,11 @@
   background-color: #292929;
   position: relative;
   bottom: 29.5rem;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   @include flex-center(flex,center,center);
   flex-direction: column;
   text-align: center;
   color: white;
   .content{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     @include flex-center(flex,center,center);
     flex-direction: column;
     gap: 3.8rem;
