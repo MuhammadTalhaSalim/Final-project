@@ -1,7 +1,21 @@
+@media (min-width: 1600px) {
+  html {
+    font-size: 10.5px !important;
+  }
+}
+@media (min-width: 1920px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    font-size: 17px !important;
+  }
+}
 header {
   width: 100vw;
   height: 95vh;
-  max-width: 1440px;
   background-color: #3f3f3f;
   overflow-y: hidden;
 }
@@ -25,29 +39,31 @@ header .content p {
 }
 header .buttons {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   justify-content: center;
   padding: 22vh 0;
 }
 header .buttons button {
   color: white;
   font-size: 2.4rem;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
 }
 header .buttons button#pink-button {
   background-color: #f9449b;
-  border: 1px solid #f9449b;
+  border: 0.1rem solid #f9449b;
+  box-shadow: 0.1rem 0rem 1.3rem #f9449b;
 }
 header .buttons button#pink-button:hover {
   background-color: crimson;
   transition-duration: 0.5s;
-  border: 1px solid crimson;
+  border: 0.1rem solid crimson;
 }
 header .buttons button#black-button {
   background-color: #3f3f3f;
-  border: 1px solid white;
+  border: 0.1rem solid white;
   position: relative;
+  box-shadow: 0.1rem 0rem 1.1rem white;
 }
 header .buttons button#black-button:hover {
   background-color: white;
@@ -70,8 +86,8 @@ header .buttons button#black-button:hover {
   }
   header .buttons {
     flex-direction: column;
-    gap: 17px;
-    padding: 44vh 0px;
+    gap: 1.7rem;
+    padding: 44vh 0rem;
     align-items: center;
   }
   header .buttons button {
@@ -82,24 +98,11 @@ header .buttons button#black-button:hover {
     display: none;
   }
 }
-#black-button::before {
-  content: "";
-  background: linear-gradient(45deg, white, lightgray);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 600%;
-  z-index: -1;
-  width: calc(100% + 4px);
-  height: calc(100% + 2px);
-  filter: blur(8px);
-}
-
 nav {
   position: fixed;
   background-color: #3f3f3f;
   width: 100%;
-  max-width: 1440px;
+  z-index: 1;
 }
 nav .containor {
   display: flex;
@@ -111,10 +114,10 @@ nav .containor .menu {
   display: none;
 }
 nav .containor .menu .line {
-  width: 45px !important;
-  height: 3px !important;
+  width: 4.5rem !important;
+  height: 0.3rem !important;
   background-color: white !important;
-  margin: 8px 0 !important;
+  margin: 0.8rem 0 !important;
 }
 nav .containor a {
   font-size: 1.4rem;
@@ -128,12 +131,12 @@ nav .containor a:hover {
 }
 nav .containor ul {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   list-style: none;
 }
 nav .containor .logo {
-  height: 30px;
-  width: 130px;
+  height: 3rem;
+  width: 13rem;
   cursor: pointer;
 }
 
@@ -159,7 +162,7 @@ nav .containor .logo {
     font-size: 1.2rem;
   }
   header .buttons {
-    padding: 28vh 0px;
+    padding: 28vh 0rem;
   }
   header .buttons button {
     font-size: 1.4rem;
@@ -168,7 +171,6 @@ nav .containor .logo {
 .section-1 {
   width: 100%;
   height: 130vh;
-  max-width: 1440px;
   background-color: #101010;
   -webkit-clip-path: polygon(71% 17%, 79% 0, 100% 0, 100% 100%, 80% 100%, 0 100%, 0% 80%, 0 17%);
           clip-path: polygon(71% 17%, 79% 0, 100% 0, 100% 100%, 80% 100%, 0 100%, 0% 80%, 0 17%);
@@ -179,8 +181,8 @@ nav .containor .logo {
 .section-1 .about-us-heading {
   color: white;
   position: relative;
-  top: 220px;
-  left: 200px;
+  top: 22rem;
+  left: 20rem;
   padding-right: 67%;
 }
 .section-1 .about-us-heading h1 {
@@ -194,9 +196,9 @@ nav .containor .logo {
   display: flex;
   position: relative;
   color: white;
-  padding: 0px 20rem;
-  gap: 60px;
-  margin-top: 120px;
+  padding: 0rem 20rem;
+  gap: 6rem;
+  margin-top: 12rem;
 }
 .section-1 .about-us-container .about-us-left {
   display: flex;
@@ -204,7 +206,7 @@ nav .containor .logo {
   color: white;
   gap: 2.5rem;
   width: 50%;
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 .section-1 .about-us-container .about-us-left h1 {
   font-size: 3.8rem;
@@ -215,12 +217,13 @@ nav .containor .logo {
 .section-1 .about-us-container button {
   color: white;
   font-size: 1.4rem;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   background-color: #f9449b;
-  border: 1px solid #f9449b;
-  width: 200px;
-  height: 45px;
+  border: 0.1rem solid #f9449b;
+  width: 20rem;
+  height: 4.5rem;
+  box-shadow: 0.1rem 0rem 1.2rem #f9449b;
 }
 .section-1 .about-us-container button:hover {
   background-color: crimson;
@@ -231,9 +234,8 @@ nav .containor .logo {
   width: 50%;
 }
 .section-1 .about-us-container .about-us-right .picture-container {
-  width: 450px;
-  height: 520px;
-  border-radius: 7px 7px;
+  width: 45rem;
+  height: 52rem;
   background-color: #3f3f3f;
   overflow-y: hidden;
 }
@@ -249,21 +251,21 @@ nav .containor .logo {
     -webkit-clip-path: polygon(0 100%, 0 3%, 69% 3%, 80% 0, 100% 0, 100% 22%, 100% 85%, 100% 99%, 85% 209%, 68% 100%, 62% 100%, 55% 100%);
             clip-path: polygon(0 100%, 0 3%, 69% 3%, 80% 0, 100% 0, 100% 22%, 100% 85%, 100% 99%, 85% 209%, 68% 100%, 62% 100%, 55% 100%);
     bottom: 10vh;
-    height: 1300px;
+    height: 130rem;
     background-color: #101010 !important;
   }
   .section-1 .about-us-heading {
     text-align: center;
     left: 0;
-    padding: 10px;
-    top: 150px;
+    padding: 1rem;
+    top: 15rem;
   }
   .section-1 .about-us-heading h1 {
     font-size: 2.8rem;
   }
   .section-1 .about-us-container {
-    padding: 0px 33px;
-    margin-top: 190px;
+    padding: 0rem 3.3rem;
+    margin-top: 19rem;
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -281,14 +283,14 @@ nav .containor .logo {
     width: 100% !important;
   }
   .section-1 .about-us-right .picture-container {
-    width: 359px !important;
-    height: 400px !important;
-    border-radius: 0px !important;
+    width: 35.9rem !important;
+    height: 40rem !important;
+    border-radius: 0rem !important;
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .about-us-heading {
-    left: 42px !important;
+    left: 4.2rem !important;
   }
   .about-us-heading h1 {
     font-size: 2rem !important;
@@ -297,14 +299,15 @@ nav .containor .logo {
     font-size: 1rem;
   }
   .about-us-container {
-    padding: 0px 4rem !important;
+    padding: 0rem 4rem !important;
   }
   .about-us-container .about-us-left p {
     font-size: 1rem !important;
   }
   .about-us-container .about-us-right .picture-container {
-    height: 425px !important;
-    border-radius: 0px !important;
+    height: 42.5rem !important;
+    border-radius: 0rem !important;
+    width: 37rem !important;
   }
 }
 @media (min-width: 350px) and (max-width: 600px) {
@@ -317,10 +320,10 @@ nav .containor .logo {
     height: 115vh;
   }
   .about-us-heading {
-    left: 71px !important;
+    left: 7.1rem !important;
   }
   .about-us-container {
-    padding: 0px 7rem !important;
+    padding: 0rem 7rem !important;
   }
 }
 @media (min-width: 1435px) {
@@ -331,12 +334,11 @@ nav .containor .logo {
 .section-2 {
   width: 100%;
   height: 100vh;
-  max-width: 1440px;
   background-color: #3f3f3f;
   overflow-y: hidden;
   color: white;
   position: relative;
-  bottom: 140px;
+  bottom: 14rem;
 }
 .section-2 .Services-container {
   width: 50%;
@@ -344,8 +346,8 @@ nav .containor .logo {
   flex-direction: column;
   float: right;
   align-items: center;
-  padding: 50px 60px;
-  gap: 20px;
+  padding: 5rem 6rem;
+  gap: 2rem;
 }
 .section-2 .Services-container .heading {
   display: flex;
@@ -353,11 +355,11 @@ nav .containor .logo {
   text-align: right;
 }
 .section-2 .Services-container .heading h2 {
-  font-size: 38px;
+  font-size: 3.8rem;
   font-weight: bold;
 }
 .section-2 .Services-container .heading p {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .section-2 .Services-container .services {
   display: flex;
@@ -374,83 +376,82 @@ nav .containor .logo {
   width: 33%;
 }
 .section-2 .Services-container .services .icon img {
-  width: 42px;
-  height: 40px;
-  border: 2px solid white;
-  padding: 10px;
-  border-radius: 35px;
+  width: 4.2rem;
+  height: 4rem;
+  border: 0.2rem solid white;
+  padding: 1rem;
+  border-radius: 3.5rem;
 }
 .section-2 .Services-container .services .icon h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .section-2 .Services-container .services .icon p {
-  font-size: 12px;
-  padding: 0px 10px;
+  font-size: 1.2rem;
+  padding: 0rem 1rem;
 }
 
 @media only screen and (max-width: 600px) {
   .section-2 {
-    height: 1400px;
+    height: 140rem;
     background-color: #0f0f0f;
   }
   .section-2 .Services-container {
     width: 100%;
-    padding: 90px 0px;
+    padding: 9rem 0rem;
   }
   .section-2 .Services-container .heading {
     text-align: center !important;
-    padding: 0px 35px;
+    padding: 0rem 3.5rem;
   }
   .section-2 .Services-container .heading h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
   .section-2 .Services-container .services {
     width: 75%;
-    gap: 35px;
-    margin-top: 22px;
+    gap: 3.5rem;
+    margin-top: 2.2rem;
   }
   .section-2 .Services-container .services .icon {
-    width: 240px;
+    width: 24rem;
   }
   .section-2 .Services-container .services .icon h3 {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .section-2 .Services-container .services .icon p {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .Services-container {
-    padding: 9px 18px !important;
+    padding: 0.9rem 1.8rem !important;
     width: 85% !important;
   }
   .Services-container .heading h2 {
-    font-size: 30px !important;
+    font-size: 3rem !important;
   }
   .Services-container .heading p {
-    font-size: 13px !important;
+    font-size: 1.3rem !important;
   }
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
   .section-2 {
-    bottom: 163px;
+    bottom: 16.3rem;
   }
 }
 @media (min-width: 1435px) {
   .section-2 {
-    bottom: 188px;
+    bottom: 18.8rem;
     height: 80vh;
   }
 }
 .section-3 {
   width: 100%;
   height: 180vh;
-  max-width: 1440px;
   background-color: #101010;
   -webkit-clip-path: polygon(0% 15%, 0 0, 19% 0, 27% 14%, 85% 14%, 100% 14%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
           clip-path: polygon(0% 15%, 0 0, 19% 0, 27% 14%, 85% 14%, 100% 14%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
   position: relative;
-  bottom: 295px;
+  bottom: 29.5rem;
   color: white;
   display: flex;
   align-items: center;
@@ -460,31 +461,32 @@ nav .containor .logo {
 .featured-cars-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 .featured-cars-container .heading {
   text-align: center;
 }
 .featured-cars-container .heading h3 {
-  font-size: 38px;
+  font-size: 3.8rem;
   font-weight: bold;
 }
 .featured-cars-container .heading p {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .featured-cars-container .First-container, .featured-cars-container .second-container {
   display: flex;
-  gap: 30px;
-  padding: 11px;
+  gap: 3rem;
+  padding: 1.1rem;
 }
 .featured-cars-container .First-container .car-container, .featured-cars-container .second-container .car-container {
   position: relative;
-  width: 350px;
-  height: 300px;
-  border: 1px solid white;
+  width: 35rem;
+  height: 30rem;
+  border: 0.1rem solid white;
+  box-shadow: 0.1rem 0rem 1.1rem white;
 }
 .featured-cars-container .First-container .car-container img, .featured-cars-container .second-container .car-container img {
   width: 100%;
@@ -493,16 +495,16 @@ nav .containor .logo {
      object-fit: cover;
 }
 .featured-cars-container .First-container .car-container .content, .featured-cars-container .second-container .car-container .content {
-  padding: 10px;
+  padding: 1rem;
 }
 .featured-cars-container .First-container .car-container .content h3, .featured-cars-container .second-container .car-container .content h3 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 .featured-cars-container .First-container .car-container .content p, .featured-cars-container .second-container .car-container .content p {
-  font-size: 10px;
+  font-size: 1rem;
 }
 .featured-cars-container .First-container .car-container .content button, .featured-cars-container .second-container .car-container .content button {
-  font-size: 14px;
+  font-size: 1.4rem;
   background-color: #f9449b;
   color: white;
   width: 50%;
@@ -518,15 +520,16 @@ nav .containor .logo {
   justify-content: space-between;
 }
 .featured-cars-container .First-container .car-container .content h4, .featured-cars-container .second-container .car-container .content h4 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 .final-button {
   color: white;
   font-size: 2rem;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   background-color: #101010;
-  border: 1px solid white;
+  border: 0.1rem solid white;
+  box-shadow: 0.1rem 0rem 1.1rem white;
 }
 .final-button:hover {
   background-color: white;
@@ -536,25 +539,25 @@ nav .containor .logo {
 
 @media only screen and (max-width: 600px) {
   .section-3 {
-    height: 1370px;
+    height: 137rem;
     -webkit-clip-path: polygon(0% 15%, 0 0, 19% 0, 25% 2%, 85% 2%, 100% 2%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
             clip-path: polygon(0% 15%, 0 0, 19% 0, 25% 2%, 85% 2%, 100% 2%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
-    bottom: 170px;
+    bottom: 17rem;
     overflow-y: hidden !important;
     background-color: #101010;
   }
   .section-3 .featured-cars-container h3 {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
   .section-3 .featured-cars-container p {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
   .First-container, .featured-cars-container .second-container {
     flex-direction: column;
     overflow-y: hidden !important;
   }
   .First-container .car-container, .featured-cars-container .second-container .car-container {
-    width: 280px !important;
+    width: 28rem !important;
   }
   .second-container {
     display: none !important;
@@ -562,14 +565,14 @@ nav .containor .logo {
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .featured-cars-container {
-    gap: 15px;
-    margin-top: 137px;
+    gap: 1.5rem;
+    margin-top: 13.7rem;
   }
   .featured-cars-container .heading h3 {
-    font-size: 30px;
+    font-size: 3rem;
   }
   .featured-cars-container .heading P {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .featured-cars-container .First-container, .featured-cars-container .second-container {
     flex-wrap: wrap;
@@ -581,20 +584,20 @@ nav .containor .logo {
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
   .section-3 {
-    bottom: 345px !important;
+    bottom: 34.5rem !important;
   }
   .section-3 .car-container {
-    width: 280px !important;
+    width: 28rem !important;
   }
 }
 @media (min-width: 1435px) {
   .section-3 {
-    bottom: 394px;
+    bottom: 39.4rem;
     height: 137vh;
   }
 }
 .car-container:hover {
-  transform: translateY(-10px);
+  transform: translateY(-1rem);
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   cursor: pointer;
@@ -603,86 +606,85 @@ nav .containor .logo {
 .section-4 {
   width: 100vw;
   height: 140vh;
-  max-width: 1440px;
   background-color: #3f3f3f;
   position: relative;
-  bottom: 295px;
+  bottom: 29.5rem;
   overflow-y: hidden;
 }
 .section-4 .testimonial {
-  padding: 75px;
+  padding: 7.5rem;
 }
 .section-4 .testimonial .heading {
   color: white;
 }
 .section-4 .testimonial .heading h1 {
-  font-size: 38px;
+  font-size: 3.8rem;
   font-weight: bold;
 }
 .section-4 .testimonial .heading p {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .section-4 .testimonial .container {
   display: flex;
-  padding: 25px 50px;
+  padding: 2.5rem 5rem;
 }
 .section-4 .testimonial .container .right {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
 }
 .section-4 .testimonial .container .right .right-container {
-  width: 400px;
-  height: 150px;
-  border: 1px solid white;
+  width: 40rem;
+  height: 15rem;
+  border: 0.1rem solid white;
   display: flex;
-  padding: 20px;
+  padding: 2rem;
 }
 .section-4 .testimonial .container .right .right-container .person {
   width: 30%;
 }
 .section-4 .testimonial .container .right .right-container .person img {
-  width: 91px;
-  height: 91px;
+  width: 9.1rem;
+  height: 9.1rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 5rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .section-4 .testimonial .container .right .right-container .person p {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 .section-4 .testimonial .container .right .right-container .rivew {
   width: 70%;
 }
 .section-4 .testimonial .container .right .right-container .rivew .stars i {
-  padding-top: 21px;
-  font-size: 20px;
+  padding-top: 2.1rem;
+  font-size: 2rem;
 }
 .section-4 .testimonial .container .left {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3rem;
   justify-content: center;
   width: 7%;
 }
 .section-4 .testimonial .container .left img {
-  width: 50px;
-  height: 180px;
+  width: 5rem;
+  height: 18rem;
 }
 
 @media only screen and (max-width: 600px) {
   .section-4 {
-    height: 1500px;
-    bottom: 171px;
+    height: 150rem;
+    bottom: 17.1rem;
   }
   .section-4 .testimonial {
     padding: 0;
   }
   .section-4 .testimonial .heading {
     text-align: center;
-    padding: 80px 0px;
+    padding: 0.8rem 0rem;
   }
   .section-4 .testimonial .heading h1 {
     font-size: 2.8rem;
@@ -699,17 +701,17 @@ nav .containor .logo {
     display: none;
   }
   .section-4 .testimonial .container .right {
-    gap: 30px;
+    gap: 3rem;
   }
   .section-4 .testimonial .container .right #First-container {
-    margin-top: 75px;
+    margin-top: 7.5rem;
   }
   .section-4 .testimonial .container .right .right-container {
-    width: 230px;
-    height: 280px;
-    border: 1px solid white;
+    width: 23rem;
+    height: 28rem;
+    border: 0.1rem solid white;
     display: flex;
-    padding: 20px;
+    padding: 2rem;
     flex-direction: column;
     text-align: center;
   }
@@ -724,7 +726,7 @@ nav .containor .logo {
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .section-4 .testimonial {
-    padding: 15px;
+    padding: 1.5rem;
   }
   .section-4 .testimonial .heading {
     text-align: center;
@@ -738,25 +740,24 @@ nav .containor .logo {
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
   .section-4 {
-    bottom: 347px;
+    bottom: 34.7rem;
   }
 }
 @media (min-width: 1435px) {
   .section-4 {
-    bottom: 395px;
+    bottom: 39.5rem;
     height: 100vh;
   }
   .section-4 .right-container .rivew p {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
 }
 .section-5 {
   width: 100%;
   height: 70vh;
-  max-width: 1440px;
   background-color: #292929;
   position: relative;
-  bottom: 295px;
+  bottom: 29.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -769,24 +770,25 @@ nav .containor .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 38px;
-  padding: 0px 30rem;
+  gap: 3.8rem;
+  padding: 0rem 3rem;
 }
 .section-5 .content h1 {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
 }
 .section-5 .content p {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .section-5 .content button {
   background-color: #f9449b;
   color: white;
-  height: 60px;
-  width: 300px;
-  font-size: 18px;
+  height: 6rem;
+  width: 30rem;
+  font-size: 1.8rem;
   border: none;
   cursor: pointer;
+  box-shadow: 0.1rem 0rem 1.3rem #f9449b;
 }
 .section-5 .content button:hover {
   background-color: crimson;
@@ -795,70 +797,69 @@ nav .containor .logo {
 
 @media only screen and (max-width: 600px) {
   .section-5 {
-    height: 550px;
+    height: 55rem;
   }
   .section-5 .content {
-    padding: 0px;
+    padding: 0rem;
   }
   .section-5 .content h1 {
-    font-size: 38px;
+    font-size: 3.8rem;
   }
   .section-5 .content P {
-    font-size: 15px;
-    padding: 0px 50px;
+    font-size: 1.5rem;
+    padding: 0rem 5rem;
   }
   .section-5 .content button {
-    height: 50px;
-    width: 260px;
+    height: 5rem;
+    width: 26rem;
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .section-5 .content {
-    padding: 0px 5rem;
+    padding: 0rem 5rem;
   }
   .section-5 .content h1 {
-    font-size: 35px;
+    font-size: 3.5rem;
   }
   .section-5 .content p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
   .section-5 {
-    bottom: 348px;
+    bottom: 34.8rem;
   }
 }
 @media (min-width: 1435px) {
   .section-5 {
-    bottom: 395px;
+    bottom: 39.5rem;
   }
 }
 footer {
   width: 100%;
   height: 122.5vh;
-  max-width: 1440px;
   background-color: #101010;
   position: relative;
-  margin-top: -300px;
+  margin-top: -30rem;
   color: white;
 }
 footer .footer-first-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 70px;
+  padding: 8rem 7rem;
 }
 footer .footer-first-container .logo img {
-  width: 150px;
-  height: 40px;
+  width: 15rem;
+  height: 4rem;
   cursor: pointer;
 }
 footer .footer-first-container .icons {
   display: flex;
-  gap: 25px;
+  gap: 2.5rem;
 }
 footer .footer-first-container .icons i {
-  font-size: 28px;
+  font-size: 2.8rem;
   cursor: pointer;
 }
 footer .footer-first-container .icons i:hover {
@@ -866,56 +867,56 @@ footer .footer-first-container .icons i:hover {
 }
 footer .The-containers {
   display: flex;
-  gap: 45px;
-  padding: 10px 40px;
-  gap: 30px;
+  gap: 4.5rem;
+  padding: 1rem 4rem;
+  gap: 3rem;
 }
 footer .The-containers .footer-second-container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 2.5rem;
   width: 40%;
 }
 footer .The-containers .footer-second-container .information p {
-  font-size: 18px;
-  padding-right: 80px;
+  font-size: 1.8rem;
+  padding-right: 8rem;
 }
 footer .The-containers .footer-second-container .contact-information {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 footer .The-containers .footer-second-container .contact-information .title {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 footer .The-containers .footer-second-container .contact-information .phone, footer .The-containers .footer-second-container .contact-information .address, footer .The-containers .footer-second-container .contact-information .email {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   cursor: pointer;
 }
 footer .The-containers .footer-second-container .contact-information .phone:hover, footer .The-containers .footer-second-container .contact-information .address:hover, footer .The-containers .footer-second-container .contact-information .email:hover {
   color: #f9449b;
 }
 footer .The-containers .footer-second-container .contact-information .phone i, footer .The-containers .footer-second-container .contact-information .address i, footer .The-containers .footer-second-container .contact-information .email i {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 footer .The-containers .footer-second-container .contact-information .phone p, footer .The-containers .footer-second-container .contact-information .address p, footer .The-containers .footer-second-container .contact-information .email p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 footer .The-containers .footer-third-container, footer .The-containers .footer-fifth-container, footer .The-containers .footer-fourth-container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 2.5rem;
   width: 20%;
-  margin-top: 60px;
+  margin-top: 6rem;
 }
 footer .The-containers .footer-third-container .title, footer .The-containers .footer-fifth-container .title, footer .The-containers .footer-fourth-container .title {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 footer .The-containers .footer-third-container p, footer .The-containers .footer-fifth-container p, footer .The-containers .footer-fourth-container p {
-  font-size: 20px;
+  font-size: 2rem;
   cursor: pointer;
 }
 footer .The-containers .footer-third-container p:hover, footer .The-containers .footer-fifth-container p:hover, footer .The-containers .footer-fourth-container p:hover {
@@ -923,30 +924,30 @@ footer .The-containers .footer-third-container p:hover, footer .The-containers .
 }
 footer .statment {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 8rem;
 }
 footer .statment p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
   footer {
-    height: 1967px !important;
+    height: 196.7rem !important;
   }
   footer .footer-first-container {
-    padding: 50px 70px;
+    padding: 5rem 7rem;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
   }
   footer .footer-first-container .icons {
-    gap: 45px !important;
+    gap: 4.5rem !important;
   }
   footer .footer-second-container {
     width: 100%;
     text-align: center;
   }
   footer .footer-second-container .information p {
-    padding-right: 0px !important;
+    padding-right: 0rem !important;
   }
   footer .footer-second-container .contact-information {
     align-items: center;
@@ -964,19 +965,19 @@ footer .statment p {
 }
 @media (min-width: 350px) and (max-width: 600px) {
   footer {
-    height: 1800px !important;
+    height: 180rem !important;
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
   footer {
-    height: 1700px !important;
+    height: 170rem !important;
   }
   footer .footer-second-container {
     width: 100%;
     text-align: center;
   }
   footer .footer-second-container .information p {
-    padding-right: 0px !important;
+    padding-right: 0rem !important;
   }
   footer .footer-second-container .contact-information {
     align-items: center;
@@ -994,18 +995,22 @@ footer .statment p {
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
   footer {
-    margin-top: -350px;
+    margin-top: -35rem;
   }
 }
 @media (min-width: 1435px) {
   footer {
-    margin-top: -400px;
+    height: 90.5vh;
+    margin-top: -40rem;
   }
 }
+html {
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */

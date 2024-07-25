@@ -1,9 +1,8 @@
 .section-3 {
-    // width: 1440px;
-    // height: 1577px;
+    // width: 1440rem;
+    // height: 1577rem;
     width: 100%;
     height: 180vh;
-    max-width: 1440px;
     background-color:$second-color;
     clip-path: polygon(
       0% 15%,
@@ -20,7 +19,7 @@
       0% 85%
     );
     position: relative;
-    bottom: 295px;
+    bottom: 29.5rem;
     color: $fourth-color;
     display: flex;
     align-items: center;
@@ -29,45 +28,46 @@
   .featured-cars-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 12rem;
     .heading {
       text-align: center;
       h3 {
-        font-size: 38px;
+        font-size: 3.8rem;
         font-weight: bold;
       }
       p {
-        font-size: 18px;
+        font-size: 1.8rem;
       }
       
   }
   .First-container {
     display: flex;
-    gap: 30px;
-    padding:11px;
+    gap: 3rem;
+    padding:1.1rem;
     .car-container {
       position: relative;
-      width: 350px;
-      height: 300px;
-      border: 1px solid $fourth-color;
+      width: 35rem;
+      height: 30rem;
+      border: .1rem solid $fourth-color;
+      box-shadow: .1rem 0rem 1.1rem white;
       img {
         width: 100%;
         height: 60%;
         object-fit: cover;
       }
       .content {
-        padding: 10px; 
+        padding: 1rem; 
         h3 {
-          font-size:  20px;
+          font-size:  2rem;
         }
         p {
-          font-size: 10px;
+          font-size: 1rem;
         }
         button {
-          font-size: 14px;
+          font-size: 1.4rem;
           background-color: $third-color;
           color: $fourth-color;
           width:50%;
@@ -81,10 +81,10 @@
         .details {
           display: flex;
           justify-content: space-between;
-          // padding:10px;
+          // padding:10rem;
         }
         h4 {
-          font-size: 20px;
+          font-size: 2rem;
         }
       }
     }
@@ -97,11 +97,12 @@
   }
 .final-button {
     color: $fourth-color;
-    font-size: 2.0rem;
-    padding: 5px 10px;
+    font-size: 2rem;
+    padding: .5rem 1rem;
     cursor: pointer;
     background-color: #101010;
-    border: 1px solid $fourth-color;
+    border: .1rem solid $fourth-color;
+    box-shadow: .1rem 0rem 1.1rem white;
     &:hover{
       background-color:$fourth-color;
       color: black;
@@ -111,17 +112,17 @@
 
 @include Mobile-screen {
   .section-3{
-    height: 1370px;
+    height: 137rem;
     clip-path: polygon(0% 15%, 0 0, 19% 0, 25% 2%, 85% 2%, 100% 2%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
-    bottom: 170px;
+    bottom: 17rem;
     overflow-y: hidden !important;
     background-color: #101010;
     .featured-cars-container{
       h3{
-        font-size: 26px;
+        font-size: 2.6rem;
       }
       p{
-        font-size: 13px;
+        font-size: 1.3rem;
       }
     }
   }
@@ -130,7 +131,7 @@
     overflow-y: hidden !important;
 
     .car-container{
-      width: 280px !important;
+      width: 28rem !important;
     }
   }
   .second-container{
@@ -140,14 +141,14 @@
 
 @include Tablet-screen{
   .featured-cars-container{
-    gap: 15px;
-    margin-top: 137px;
+    gap: 1.5rem;
+    margin-top: 13.7rem;
     .heading{
       h3{
-        font-size: 30px;
+        font-size: 3rem;
       }
       P{
-        font-size: 14px;
+        font-size: 1.4rem;
       }
     }
     .First-container{
@@ -162,9 +163,9 @@
 
 @include sm-laptop{
   .section-3{
-    bottom: 345px !important;
+    bottom: 34.5rem !important;
     .car-container{
-      width:280px !important;
+      width:28rem !important;
     }
   }
   
@@ -172,12 +173,12 @@
 
 @include laptop-screen{
   .section-3{
-    bottom: 394px;
+    bottom: 39.4rem;
     height: 137vh;
   }
 }
 .car-container:hover {
-  transform:translateY(-10px);
+  transform:translateY(-1.0rem);
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   cursor: pointer;

@@ -1,0 +1,17 @@
+@include V-larege-screen{
+    html{
+        font-size: 10.5px !important;
+    }
+}
+
+@include XL-screen{
+    html{
+        font-size: 13px !important;
+    }
+}
+
+@include XXL-screen{
+    html{
+        font-size:17px !important;
+    }
+}
