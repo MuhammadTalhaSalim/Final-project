@@ -108,7 +108,7 @@
             border: .1rem solid white;
             // display: flex;
             padding: 2rem;
-            // flex-direction: column;
+            flex-direction: column;
             // text-align: center;
             @include flex-center(flex,center,center);
             // margin-top: 65rem;

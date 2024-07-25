@@ -726,6 +726,7 @@ nav .containor .logo {
     height: 28rem;
     border: 0.1rem solid white;
     padding: 2rem;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
