@@ -352,6 +352,7 @@ nav .containor .logo {
   color: white;
   position: relative;
   bottom: 14rem;
+  margin-top: -1%;
 }
 .section-2 .Services-container {
   width: 50%;
@@ -469,6 +470,7 @@ nav .containor .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -1%;
 }
 
 .featured-cars-container {
