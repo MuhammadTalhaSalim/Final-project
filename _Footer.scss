@@ -8,9 +8,10 @@ footer{
     
     color: $fourth-color;
     .footer-first-container{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+      @include flex-center(flex,center,space-between);
       padding: 8rem 7rem;
       .logo{
         img{
@@ -110,7 +111,7 @@ footer{
       text-align: center;
       margin-top: 8rem;
       p{
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
      }
    

@@ -6,10 +6,11 @@ header {
   background-color: $First-color;
   overflow-y: hidden;
   .content {
-    display: flex;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex-center(flex,center,center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: $fourth-color;
     padding: 7.7rem 20%;
 

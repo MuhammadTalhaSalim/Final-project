@@ -21,17 +21,19 @@
     position: relative;
     bottom: 29.5rem;
     color: $fourth-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include flex-center(flex,center,center);
     margin-top: -1%;
   }
   .featured-cars-container {
-    display: flex;
+    // display: flex;
     flex-direction: column;
     gap: 3rem;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
+    @include flex-center(flex,center,center);
     margin-top: 12rem;
     .heading {
       text-align: center;

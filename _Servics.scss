@@ -37,10 +37,11 @@
       width: 100%;
       .icon {
         text-align: center;
-        display: flex;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include flex-center(flex,center,center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width:33%;
         img {
           width: 4.2rem;
