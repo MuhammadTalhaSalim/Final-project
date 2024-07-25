@@ -106,11 +106,10 @@
             width: 23rem;
             height: 28rem;
             border: .1rem solid white;
-            // display: flex;
+            display: flex;
             padding: 2rem;
             flex-direction: column;
-            // text-align: center;
-            @include flex-center(flex,center,center);
+            text-align: center;
             // margin-top: 65rem;
             .person {
               width: 100%;

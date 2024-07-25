@@ -725,11 +725,10 @@ nav .containor .logo {
     width: 23rem;
     height: 28rem;
     border: 0.1rem solid white;
+    display: flex;
     padding: 2rem;
     flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
   }
   .section-4 .testimonial .container .right .right-container .person {
     width: 100%;
