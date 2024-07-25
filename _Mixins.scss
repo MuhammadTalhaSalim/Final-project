@@ -55,7 +55,4 @@
     justify-content:$justify;
   }
 
-  @mixin tansition-mixin($duration,$timing-function){
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
-}
+ 

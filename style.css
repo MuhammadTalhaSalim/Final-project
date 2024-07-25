@@ -738,6 +738,9 @@ nav .containor .logo {
     width: 100%;
     overflow-y: hidden;
   }
+  .section-4 .testimonial .container .right .right-container i {
+    overflow-y: hidden;
+  }
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .section-4 .testimonial {
@@ -976,6 +979,9 @@ footer .statment p {
   }
   footer .The-containers .footer-third-container, footer .The-containers .footer-fourth-container, footer .The-containers .footer-fifth-container {
     width: 100% !important;
+  }
+  footer i {
+    overflow-y: hidden;
   }
 }
 @media (min-width: 350px) and (max-width: 600px) {
